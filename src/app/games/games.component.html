@@ -2,10 +2,16 @@
   <div class="col">
     <h5 class="pb-4">Platforms</h5>
     <div class="list-group">
-      <a></a>
+      <a
+        class="list-group-item list-group-item-action"
+        *ngFor="let game of gamesPlatformList"
+        routerLinkActive="active"
+        [routerLink]="game.platform"
+      >{{ game.platform }}</a>
     </div>
   </div>
   <div class="col">
     <h5 class="pb-4">Platform Games</h5>
+    <router-outlet></router-outlet>
   </div>
 </div>

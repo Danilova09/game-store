@@ -10,6 +10,7 @@ import { GamesComponent } from './games/games.component';
 import { PlatformGamesListComponent } from './games/platform-games-list/platform-games-list.component';
 import { ChoosePlatformComponent } from './games/choose-platform.component';
 import { GameDetailsComponent } from './game-details/game-details.component';
+import { GamesService } from './shared/games.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { GameDetailsComponent } from './game-details/game-details.component';
     FormsModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [GamesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

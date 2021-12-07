@@ -1,8 +1,10 @@
-<div class="card mb-2">
+<div class="card mb-2"
+     *ngFor="let game of gamesByPlatForm"
+     (click)="onNavigate(game)">
   <div class="row justify-content-center align-items-center">
     <div class="col-3">
-      <img  style="width: 50px;">
+      <img [src]="game.imageUrl" [alt]="game.name" style="width: 50px;">
     </div>
-    <div class="col"></div>
+    <div class="col">{{ game.name }}</div>
   </div>
 </div>

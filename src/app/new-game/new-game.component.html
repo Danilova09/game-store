@@ -1,15 +1,18 @@
-<form class="form">
+<form class="form" (ngSubmit)="onSubmit()" ngNativeValidate>
   <div class="form-group">
     <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" name="name" required>
+    <input type="text" class="form-control" id="name" name="name" required
+           [(ngModel)]="name">
   </div>
   <div class="form-group">
     <label for="imgUrl">Image</label>
-    <input type="text" class="form-control" id="imgUrl" name="imgUrl" required>
+    <input type="text" class="form-control" id="imgUrl" name="imgUrl" required
+           [(ngModel)]="imgUrl">
   </div>
   <div class="form-group">
     <label for="platform">Platform</label>
-    <select name="platform" id="platform" class="form-control" required>
+    <select name="platform" id="platform" class="form-control" required
+            [(ngModel)]="gamePlatform">
       <option value="NES">NES</option>
       <option value="Sega Genesis">Sega Genesis</option>
       <option value="Super Nintendo">Super Nintendo</option>
@@ -17,7 +20,8 @@
   </div>
   <div class="form-group">
     <label for="description">Description</label>
-    <textarea type="text" class="form-control" id="description" name="description" required></textarea>
+    <textarea type="text" class="form-control" id="description" name="description" required
+              [(ngModel)]="description"></textarea>
   </div>
   <button type="submit" class="btn btn-secondary">create</button>
 </form>
