@@ -1,12 +1,21 @@
 <ul class="nav nav-pills nav-fill container">
   <li class="nav-item">
-    <a class="nav-link table-active">Games</a>
+    <a class="nav-link"
+       routerLink="games"
+       routerLinkActive="table-active"
+       [routerLinkActiveOptions]="{exact: true}">Games</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link">New Game</a>
+    <a class="nav-link"
+       routerLink="new-game"
+       routerLinkActive="table-active"
+       [routerLinkActiveOptions]="{exact: true}">New Game</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link">Game Details</a>
+    <a class="nav-link"
+       routerLink="game-details"
+       routerLinkActive="table-active"
+       [routerLinkActiveOptions]="{exact: true}">Game Details</a>
   </li>
 </ul>
 
