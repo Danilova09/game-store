@@ -1,12 +1,13 @@
 <h4>Game details</h4>
-<button class="btn btn-secondary mt-3">back</button>
-<div class="alert alert-secondary mt-5" style="width: 18rem;">
+<button class="btn btn-secondary mt-3" (click)="goBack()">back</button>
+<div *ngIf="gameDetails === undefined"
+     class="alert alert-secondary mt-5" style="width: 18rem;">
   game is not selected
 </div>
-<div class="card my-5" style="width: 18rem;">
-  <img class="card-img-top">
+<div *ngIf="gameDetails !== undefined" class="card my-5" style="width: 18rem;">
+  <img class="card-img-top" [src]="gameDetails.imageUrl" [alt]="gameDetails.name">
   <div class="card-body">
-    <h5 class="card-title"></h5>
-    <p class="card-text"></p>
+    <h5 class="card-title">{{ gameDetails.name }}</h5>
+    <p class="card-text">{{ gameDetails.description }}</p>
   </div>
 </div>

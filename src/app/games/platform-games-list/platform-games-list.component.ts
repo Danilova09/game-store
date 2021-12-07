@@ -10,6 +10,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 })
 export class PlatformGamesListComponent implements OnInit {
   gamesByPlatForm!: Game[];
+
   constructor(
     private gamesService: GamesService,
     private route: ActivatedRoute,

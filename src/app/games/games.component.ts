@@ -12,7 +12,9 @@ import * as _ from 'lodash';
 export class GamesComponent implements OnInit {
   gamesPlatformList!: Game[];
   games: Game[] = [];
-  constructor(private gamesService: GamesService) { }
+
+  constructor(private gamesService: GamesService) {
+  }
 
   ngOnInit(): void {
     this.games = this.gamesService.getGames();

@@ -5,6 +5,7 @@ export class GamesService {
   gamesChange = new EventEmitter<Game[]>();
   gameDetailsChange = new EventEmitter<Game>();
   gameDetails!: Game;
+
   games: Game[] = [
     new Game('Super Mario', 'https://mynintendonews.com/wp-content/uploads/2012/08/super_mario_galaxy.jpg', 'In the game, Mario must race through the Mushroom Kingdom and save Princess Toadstool (later Princess Peach) from Bowser.', 'NES'),
     new Game('Super Mario', 'https://mynintendonews.com/wp-content/uploads/2012/08/super_mario_galaxy.jpg', 'In the game, Mario must race through the Mushroom Kingdom and save Princess Toadstool (later Princess Peach) from Bowser.', 'NES'),

@@ -4,6 +4,6 @@ export class Game {
     public imageUrl: string,
     public description: string,
     public platform: string,
-  ) {}
+  ) { }
 }
 
