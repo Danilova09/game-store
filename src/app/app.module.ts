@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { NewGameComponent } from './new-game/new-game.component';
 import { GamesComponent } from './games/games.component';
+import { PlatformGamesListComponent } from './games/platform-games-list/platform-games-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     NewGameComponent,
-    GamesComponent
+    GamesComponent,
+    PlatformGamesListComponent
   ],
   imports: [
     BrowserModule,
