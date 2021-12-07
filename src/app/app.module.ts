@@ -8,6 +8,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { NewGameComponent } from './new-game/new-game.component';
 import { GamesComponent } from './games/games.component';
 import { PlatformGamesListComponent } from './games/platform-games-list/platform-games-list.component';
+import { ChoosePlatformComponent } from './games/choose-platform.component';
+import { GameDetailsComponent } from './game-details/game-details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PlatformGamesListComponent } from './games/platform-games-list/platform
     ToolbarComponent,
     NewGameComponent,
     GamesComponent,
-    PlatformGamesListComponent
+    PlatformGamesListComponent,
+    ChoosePlatformComponent,
+    GameDetailsComponent,
   ],
   imports: [
     BrowserModule,
